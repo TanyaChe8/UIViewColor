@@ -42,7 +42,12 @@ class ViewController: UIViewController {
 	}
 	
 	func changeColor() {
-		colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+		colorView.backgroundColor = UIColor(
+			red: CGFloat(redSlider.value),
+			green: CGFloat(greenSlider.value),
+			blue: CGFloat(blueSlider.value),
+			alpha: 1
+		)
 		redLabel.text = String(round(redSlider.value * 100) / 100)
 		greenLabel.text = String(round(greenSlider.value * 100) / 100)
 		blueLabel.text = String(round(blueSlider.value * 100) / 100)
